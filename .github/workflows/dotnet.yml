@@ -17,9 +17,6 @@ jobs:
     - name: Attempt to print secret value
       run: echo 'Printing secret value for AZURE_CREDENTIALS ${{ secrets.AZURE_CREDENTIALS }}'
     
-    - name: Install libssl1.0.0
-      run: sudo apt-get install libssl1.0.0
-    
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
